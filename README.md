@@ -5,7 +5,7 @@
 In this article, we'll walk through how to set up an NBA data lake using AWS services. A data lake is a centralized repository that allows you to store structured and unstructured data at any scale. By leveraging AWS services such as Amazon S3, AWS Glue, and Amazon Athena, we can automate the creation of a scalable and efficient data lake for NBA analytics. This setup enables seamless data storage, transformation, and querying to facilitate insightful analysis.
 
 ## Overview
-The `setup_nba_data_lake.py` script automates the process of creating a data lake for NBA-related data. Specifically, it performs the following actions:[**Repo**](https://github.com/Vivixell/NBA_DATA_LAKE.git)
+The `setup_nba_data_lake.py` script automates the process of creating a data lake for NBA-related data. Specifically, it performs the following actions:
 
 - Creates an Amazon S3 bucket to store raw and processed NBA data.
 - Uploads sample NBA data (in JSON format) to the S3 bucket.
@@ -33,7 +33,7 @@ Ensure the IAM user or role executing the script has the following permissions:
 - **Glue:** `glue:CreateDatabase`, `glue:CreateTable`, `glue:DeleteDatabase`,`glue:DeleteTable`
 - **Athena:** `athena:StartQueryExecution`, `athena:GetQueryResults`
 
-You can create a policy using the policy file from the [repository](https://github.com/Vivixell/NBA_DATA_LAKE.git) and apply it to the user.
+You can create a policy using the policy file from this repository and apply it to the user.
 
 If you're using a different S3 bucket name, update all instances of "victor-analytics-data-lake" accordingly:
 
@@ -91,7 +91,7 @@ Press `Ctrl + O` to save, then `Enter`, and `Ctrl + X` to exit Nano.
 ```
 nano setup_nba_data_lake.py
 ```
-- In another window, visit the [GitHub](https://github.com/Vivixell/NBA_DATA_LAKE.git) repository.
+- In another window, visit the GitHub repository.
 - Copy the contents of the `setup_nba_data_lake.py` file. (Don't forget to edit the bucket name in the code if you want to.)
 - Return to the CloudShell window and paste the contents into your file.
 - Save and exit the file.
